@@ -1,0 +1,152 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* Semantic Colors */
+  --color-primary: #007bff; /* Blue - primary actions, links, highlights */
+  --color-secondary: #6c757d; /* Gray - secondary text, disabled states */
+  --color-success: #28a745; /* Green - success, confirmation */
+  --color-warning: #ffc107; /* Yellow - warnings, content moderation */
+  --color-danger: #dc3545; /* Red - errors, delete actions */
+  --color-info: #17a2b8; /* Cyan - information */
+
+  /* Neutral Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f0f0f0;
+  --color-gray-200: #e5e7eb;
+  --color-gray-300: #d1d5db;
+  --color-gray-500: #6b7280;
+  --color-gray-700: #374151;
+  --color-gray-800: #1f2937;
+  --color-gray-900: #111827;
+
+  /* Component-Specific Colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f5f5f5;
+  --color-text-primary: #171717;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-border-light: #f1f5f9;
+
+  /* Message Bubble Colors */
+  --color-message-user-bg: #f0f0f0;
+  --color-message-assistant-bg: #e3f2fd;
+  --color-message-highlight-bg: #fff3cd;
+  --color-message-highlight-border: #ffc107;
+  --color-highlight-badge-bg: #ffc107;
+  --color-highlight-badge-text: #000000;
+
+  /* Logo Gradient */
+  --color-logo-start: #3b82f6;
+  --color-logo-end: #1e40af;
+
+  /* Scrollbar Colors */
+  --color-scrollbar-track: #f1f5f9;
+  --color-scrollbar-thumb: #cbd5e1;
+  --color-scrollbar-thumb-hover: #94a3b8;
+
+  /* Markdown/Code Block Colors */
+  --color-code-block-bg: #f4f4f4;
+  --color-code-block-border: #007bff;
+  --color-code-text: #333333;
+  --color-blockquote-border: #ddd;
+  --color-blockquote-text: #666666;
+
+  /* Legacy variables */
+  --background: #ffffff;
+  --foreground: #171717;
+  --header-height: 56px;
+
+  /* Radix UI Gray Scale Compatibility */
+  --gray-8: #6b7280;
+  --gray-11: #e5e7eb;
+}
+
+/* Dark mode is now handled by JavaScript via ThemeProvider and inline script
+   CSS media query removed to prevent conflicts with React-based appearance state */
+
+html {
+  font-family:
+    var(--font-geist-sans),
+    system-ui,
+    -apple-system,
+    sans-serif;
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+#__next {
+  height: 100%;
+}
+
+/* Ensure scroll behavior works smoothly */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
+
+/* Tailwind utilities for theme-aware colors */
+@layer utilities {
+  .bg-color-primary {
+    @apply bg-[var(--color-bg-primary)];
+  }
+
+  .bg-color-secondary {
+    @apply bg-[var(--color-bg-secondary)];
+  }
+
+  .text-color-primary {
+    @apply text-[var(--color-text-primary)];
+  }
+
+  .text-color-secondary {
+    @apply text-[var(--color-text-secondary)];
+  }
+
+  .border-color-primary {
+    @apply border-[var(--color-border)];
+  }
+
+  .message-user-bg {
+    @apply bg-[var(--color-message-user-bg)];
+  }
+
+  .message-assistant-bg {
+    @apply bg-[var(--color-message-assistant-bg)];
+  }
+
+  .border-color-primary {
+    @apply border-[var(--color-border)];
+  }
+}

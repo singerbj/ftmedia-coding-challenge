@@ -1,0 +1,128 @@
+.streamdown-container {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  word-wrap: break-word;
+}
+
+.streamdown-container h1,
+.streamdown-container h2,
+.streamdown-container h3,
+.streamdown-container h4,
+.streamdown-container h5,
+.streamdown-container h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+.streamdown-container h1 {
+  font-size: 1.5em;
+}
+
+.streamdown-container h2 {
+  font-size: 1.3em;
+}
+
+.streamdown-container h3 {
+  font-size: 1.1em;
+}
+
+.streamdown-container h4,
+.streamdown-container h5,
+.streamdown-container h6 {
+  font-size: 1em;
+}
+
+.streamdown-container p {
+  margin-bottom: 0.5em;
+}
+
+.streamdown-container ul,
+.streamdown-container ol {
+  margin-bottom: 0.5em;
+  padding-left: 2em;
+}
+
+.streamdown-container li {
+  margin-bottom: 0.25em;
+}
+
+.streamdown-container code {
+  background-color: var(--color-code-block-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-family: "Courier New", monospace;
+  font-size: 0.9em;
+}
+
+.streamdown-container pre {
+  background-color: var(--color-code-block-bg);
+  border-left: 3px solid var(--color-code-block-border);
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+.streamdown-container pre code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+.streamdown-container blockquote {
+  border-left: 3px solid var(--color-blockquote-border);
+  margin: 0.5em 0;
+  padding-left: 1em;
+  color: var(--color-text-secondary);
+  font-style: italic;
+}
+
+.streamdown-container a {
+  color: var(--color-code-block-border);
+  text-decoration: none;
+}
+
+.streamdown-container a:hover {
+  text-decoration: underline;
+}
+
+.streamdown-container strong {
+  font-weight: 600;
+}
+
+.streamdown-container em {
+  font-style: italic;
+}
+
+.streamdown-container hr {
+  border: none;
+  border-top: 1px solid var(--color-blockquote-border);
+  margin: 1em 0;
+}
+
+.streamdown-container table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.streamdown-container table th,
+.streamdown-container table td {
+  border: 1px solid var(--color-blockquote-border);
+  padding: 0.5em;
+  text-align: left;
+}
+
+.streamdown-container table th {
+  background-color: var(--color-code-block-bg);
+  font-weight: 600;
+}
+
+.streamdown-container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0.5em 0;
+}

@@ -9,7 +9,7 @@ A modern full-stack web application for internal teams to ask questions and get 
 - Node.js >=20.9.0
 - npm
 - OpenAI API key
-- Convex account (already set up)
+- Convex account
 
 ### Installation
 

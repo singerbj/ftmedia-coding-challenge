@@ -6,8 +6,8 @@ A modern full-stack web application for internal teams to ask questions and get 
 
 ### Prerequisites
 
-- Node.js 18+
-- npm or yarn
+- Node.js >=20.9.0
+- npm
 - OpenAI API key
 - Convex account (already set up)
 
